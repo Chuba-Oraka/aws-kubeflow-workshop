@@ -1,0 +1,18 @@
+2020-01-25 21:42:23.637319: I tensorflow_serving/model_servers/server.cc:86] Building single TensorFlow model file config:  model_name: fashion_model model_base_path: /tmp
+2020-01-25 21:42:23.637593: I tensorflow_serving/model_servers/server_core.cc:462] Adding/updating models.
+2020-01-25 21:42:23.637614: I tensorflow_serving/model_servers/server_core.cc:573]  (Re-)adding model: fashion_model
+2020-01-25 21:42:23.737848: I tensorflow_serving/core/basic_manager.cc:739] Successfully reserved resources to load servable {name: fashion_model version: 1}
+2020-01-25 21:42:23.737881: I tensorflow_serving/core/loader_harness.cc:66] Approving load for servable version {name: fashion_model version: 1}
+2020-01-25 21:42:23.737891: I tensorflow_serving/core/loader_harness.cc:74] Loading servable version {name: fashion_model version: 1}
+2020-01-25 21:42:23.737906: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:31] Reading SavedModel from: /tmp/1
+2020-01-25 21:42:23.739553: I external/org_tensorflow/tensorflow/cc/saved_model/reader.cc:54] Reading meta graph with tags { serve }
+2020-01-25 21:42:23.739571: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:264] Reading SavedModel debug info (if present) from: /tmp/1
+2020-01-25 21:42:23.739642: I external/org_tensorflow/tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2020-01-25 21:42:23.756768: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:203] Restoring SavedModel bundle.
+2020-01-25 21:42:23.769411: I external/org_tensorflow/tensorflow/cc/saved_model/loader.cc:333] SavedModel load for tags { serve }; Status: success: OK. Took 31493 microseconds.
+2020-01-25 21:42:23.770038: I tensorflow_serving/servables/tensorflow/saved_model_warmup.cc:105] No warmup data file found at /tmp/1/assets.extra/tf_serving_warmup_requests
+2020-01-25 21:42:23.770490: I tensorflow_serving/core/loader_harness.cc:87] Successfully loaded servable version {name: fashion_model version: 1}
+2020-01-25 21:42:23.772027: I tensorflow_serving/model_servers/server.cc:358] Running gRPC ModelServer at 0.0.0.0:8500 ...
+[warn] getaddrinfo: address family for nodename not supported
+[evhttp_server.cc : 238] NET_LOG: Entering the event loop ...
+2020-01-25 21:42:23.772824: I tensorflow_serving/model_servers/server.cc:378] Exporting HTTP/REST API at:localhost:8501 ...
